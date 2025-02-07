@@ -13,7 +13,7 @@ aspect_ratio = 2 # squish
 wpercent = (base_width / float(img.size[0]))
 hsize = int((float(img.size[1]) * float(wpercent)) / aspect_ratio)
 img = img.resize((base_width, hsize), Image.Resampling.LANCZOS) # resize
-img.save('greyscaled_input.png')
+img.save('grayscaled_input.png')
 
 # GET IMAGE DIMENSIONS AND CONVERT INTO LISTS OF VALUES
 pixels = list(img.getdata())
